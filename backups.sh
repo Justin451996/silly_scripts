@@ -8,3 +8,5 @@ cp -R <dir_original> <dir>/backups/$(date +%d-%m-%Y)/
 cp -R <dir_original> <dir>/backups/$(date +%d-%m-%Y)/
 # Borramos alguna carpeta que no deseamos hacer backup
 rm -rf <dir>/backups/$(date +%d-%m-%Y)/<carpeta_eliminar>
+# Con rclone copiamos nuestros backups de la maquina Virtual a una capeta en la nube
+rclone copy <dir>/backups/ <nombre_rclone_backups>:<nombre_carpeta_backups>
