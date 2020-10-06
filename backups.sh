@@ -1,5 +1,5 @@
 # Creamos carpeta con la fecha del backup
-mkdir /root/backups/$(date +%d-%m-%Y)
+mkdir <dir>/backups/$(date +%d-%m-%Y)
 # con mysqldump hacemos el backup de la base de datos
 # la base de datos tendra de nombre la misma fecha del backup
 mysqldump -h <host> -u <user> -C -Q -e --create-options <db> > <dir>/backups/$(date +%d-%m-%Y)/$(date +%d-%m-%Y).sql
