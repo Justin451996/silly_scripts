@@ -17,3 +17,12 @@ do
 		scp $fichero user@host:/direccion/en/host/
 	fi
 done
+
+# eliminar los archivos
+for fichero in *
+do
+	if [[ $fichero != 'script_upload.sh' ]];
+	then
+		rm $fichero 
+	fi
+done
