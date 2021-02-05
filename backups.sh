@@ -11,3 +11,4 @@ rm -rf <dir>/backups/$(date +%d-%m-%Y)/<carpeta_eliminar>
 # Con rclone copiamos nuestros backups de la maquina Virtual a una capeta en la nube
 rclone copy <dir>/backups/ <nombre_rclone_backups>:<nombre_carpeta_backups>
 #haciendo un comentario 
+#comprobar si commit puede guardar dos comentarios a la vez
